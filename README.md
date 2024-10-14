@@ -88,4 +88,47 @@ GET https://api.openweathermap.org/data/2.5/forecast
 
 ![Screenshot 2024-10-13 203034](https://github.com/user-attachments/assets/a93fda69-f3e7-4b44-b6e6-602bcb91a33f)
 
+--------------------- 
 
+
+## API Test for Searching Articles Containing Tesla (October 1 - October 10, 2024) on https://newsapi.org 
+
+### Description: 
+This project contains an automated test for the NewsAPI.org /v2/everything endpoint, which searches for articles containing the keyword "Tesla" within a specific date range: October 1, 2024, to October 10, 2024. The test verifies that the API responds correctly, returns relevant articles, and the structure of the response follows the API specifications.
+
+### Tested Endpoint: 
+GET https://newsapi.org/v2/everything 
+
+### Parameters: 
+- **q**: The search term, in this case, "Tesla."
+- **from**: The start date for the search, "2024-10-01."
+- **to**: The end date for the search, "2024-10-10."
+- **apiKey**: A valid API key from NewsAPI.org.
+
+### Project Structure: 
+- **API Test in Postman**: The test is configured in Postman and can be run directly from the application.
+- **Tests include**:
+
+    - Verifying the response status code (200 - Success).
+    - Checking for the existence of articles in the response.
+    - Verifying that the articles returned contain the term "Tesla" and are within the specified date range. 
+ 
+### Steps to Run the Test: 
+1. In Postman, insert the Endpoint. 
+2. Set parameters (q: Ethereum). 
+3. Tet the API_KEY variable with your API key from NewsAPI (c8b8bf32aaf54e389ba12d29121e6d4e). 
+4. Click on the "Run" or "Send" button to execute the test.
+5. Review the test results in Postman’s console, where you will see which tests passed or failed.
+
+### Test Details:
+
+1. Response Status Code: Verifies that the API returns a 200 / Success status code, indicating the request was successful.
+2. Existence of Articles: Ensures that the API returns a list of articles relevant to Tesla within the given date range.
+3. Article Relevance: Verifies that the articles contain the keyword "Tesla" in the title or description and that they are published between October 1 and October 10, 2024. 
+
+### Test Results:
+
+- If all tests pass successfully, the API is correctly returning articles about Tesla within the specified date range. 
+- If there are any errors, Postman will display which test failed and provide details about the failure.
+
+### Exemple 

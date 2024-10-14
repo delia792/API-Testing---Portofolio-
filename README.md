@@ -40,4 +40,51 @@ GET https://newsapi.org/v2/everything
 
 ### Exemple 
 
- ![Screenshot 2024-10-13 195833](https://github.com/user-attachments/assets/849826a3-c61c-423d-b66e-54a048252cf2)
+ ![Screenshot 2024-10-13 195833](https://github.com/user-attachments/assets/849826a3-c61c-423d-b66e-54a048252cf2) 
+
+
+ ------------------- 
+
+## API Test for Retrieving Weather in Chicago using api.openweathermap.org  
+
+### Description: 
+This project contains an automated test for the OpenWeatherMap API - /data/2.5/forecast endpoint, which retrieves the current weather for Chicago. The test is designed to verify if the API responds correctly, retrieves weather data for the correct city, and if the structure of the response matches the API specifications.
+
+### Tested Endpoint: 
+GET https://api.openweathermap.org/data/2.5/forecast 
+
+### Parameters: 
+- q: The city name, in this case, "Chicago." 
+- apiKey: A valid API key from https://openweathermap.org
+- (Optional) units: Units for temperature (metric), default is Kelvin.
+
+### Project Structure: 
+- **API Test in Postman**: The test is configured in Postman and can be run directly from the application.
+- **Tests include**:
+
+    - Verifying the response status code (200 - Success).
+    - Checking that the response contains weather data for Chicago.
+    - Verifying that key fields such as temperature, humidity, and weather are present in the response.
+ 
+### Steps to Run the Test: 
+1. In Postman, insert the Endpoint https://api.openweathermap.org/data/2.5/forecast. 
+2. Set parameters (q: Chicago, units: metric). 
+3. Tet the API_KEY variable with your API key from api.openweathermap.org (62dbc2af0464c0087f6876020d4cba64). 
+4. Click on the "Run" or "Send" button to execute the test.
+5. Review the test results in Postman’s console, where you will see which tests passed or failed.
+
+### Test Details:
+
+1. **Response Status Code**: Verifies that the API returns a 200 / Success status code, indicating the request was successful.
+2. **Correct City**: Ensures that the weather data returned is specifically for Chicago by checking the name field in the response.
+3. **Weather Data Fields**: Verifies that the response contains essential fields like temperature, humidity, weather description, and wind speed.
+
+### Test Results:
+
+- If all tests pass successfully, the API is correctly returning weather data for Chicago.
+- If there are any errors, Postman will display which test failed and provide details about the failure.
+
+### Exemple 
+
+![Screenshot 2024-10-13 202920](https://github.com/user-attachments/assets/597bb43d-db72-4506-89ec-77c8f4d75fc1)
+

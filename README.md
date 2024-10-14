@@ -86,5 +86,6 @@ GET https://api.openweathermap.org/data/2.5/forecast
 
 ### Exemple 
 
-![Screenshot 2024-10-13 202920](https://github.com/user-attachments/assets/597bb43d-db72-4506-89ec-77c8f4d75fc1)
+![Screenshot 2024-10-13 203034](https://github.com/user-attachments/assets/a93fda69-f3e7-4b44-b6e6-602bcb91a33f)
+
 

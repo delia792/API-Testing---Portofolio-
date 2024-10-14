@@ -132,3 +132,5 @@ GET https://newsapi.org/v2/everything
 - If there are any errors, Postman will display which test failed and provide details about the failure.
 
 ### Exemple 
+
+![Screenshot 2024-10-14 134148](https://github.com/user-attachments/assets/35d79581-09a2-494c-9919-a4861fbcd96d)
